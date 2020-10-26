@@ -1,0 +1,51 @@
+# React
+- a library for building user interfaces created by Facebook
+- use React with ReactDOM (a.k.a virtual DOM)
+- to minimize the bugs that occur when developers are building UIs through the use of components
+- can be small pieces of an interface to an entire app
+- use JavaScript with the use of JSX syntax which is similar to HTML
+
+# ReactDOM
+- ReactDOM.render() function with two args: (the comp you want to render, the DOM element the comp to be rendered)
+
+# Service workers
+- the code that help app performance and allow features of your web app to work offline
+
+# Basic concepts
+## components
+- reusable module that renders a part of the app, serving a single, obvious purpose
+- PascalCase (a naming convension with the first letter of each is capitalized)
+- can be either a 'functional' or 'class' component which returns JSX
+
+## props
+- any data passed into a React component
+- comparable to HTML attributes (they are actually described like HTML ones!)
+- read-only and unidirectional (props can be passed from Parent components down to Child components)
+
+### How props are passed down to children
+- all properties described in the Parent component go into the variable 'props'
+- the Child component receives all the properties in 'props' in the form of JavaScript Object
+-> example below:
+in Parent component 
+
+    <ParentComp name="Name" age="20" height="180" weight="70" hobby="coding" />
+
+in props in Child component
+
+    Object = {
+        name: "Name",
+        age: "20",
+        height: "180",
+        weight: "70",
+        hobby: "coding"
+    }
+
+-> meaning that
+1. component props are always collected into objects
+2. the variables defined in the Parent component with their value are passed down to the Child component as they are (no change in variable names!).
+3. in the Child component values can be referred by 'props.variableName'.
+
+
+## JavaScript variables in JSX
+- described with curly braces, like {variableName} 
+

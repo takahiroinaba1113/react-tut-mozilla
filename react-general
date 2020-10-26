@@ -1,0 +1,50 @@
+# Application structure
+your app
+├── README.md
+├── node_modules
+├── package.json
+├── package-lock.json
+├── .gitignore
+├── public
+│   ├── favicon.ico
+│   ├── index.html
+│   └── manifest.json
+└── src
+    ├── App.css
+    ├── App.js
+    ├── App.test.js
+    ├── index.css
+    ├── index.js
+    ├── logo.svg
+    └── serviceWorker.js
+
+## src dir
+- source code for your app
+
+## public dir
+- files read by a browser
+- index.html: where React injects your code into so that the browser can run it
+- published when you build and deploy a production version of the app
+- package.json: information that Node.js/npm uses to keep it organized
+
+# Import statements
+- statements at the top of the file that allow the component to use code defined elsewhere
+- the use of './'(path) and extension if the modules are not in the package.json
+
+# Export statements
+- the statement at the end of .js file that makes the component available to other modules
+
+# User story
+- an informal, natural language description of one or more features of a software system.
+- often written from the perspective of an end user or user of a system.
+-> example below:
+
+As a user, I can:
+    - read a list of tasks
+    - add a task using the mouse or keyboard
+    - mark any task as completed, using the mouse or keyboard
+    - delete any task, using the mouse or keyboard
+    - edit any task, using the mouse or keyboard
+    - view a specific subset of tasks: all tasks, only the active task, or only the completed tasks
+
+
